@@ -1,0 +1,16 @@
+{
+    "name": "ZipTLD",
+    "version": "0.0.1",
+    "description": "Alerts on link click for .zip tld",
+    "manifest_version": 3,
+    "author": "eliasbokreta",
+    "content_scripts":[{
+        "matches":["<all_urls>"],
+        "js":["external/sweetalert/sweetalert.min.js", "contentscript.js"],
+        "run_at": "document_end",
+        "all_frames": true
+    }],
+    "permissions": [
+        "activeTab"
+    ]
+}
